@@ -24,13 +24,13 @@ function gup(name) {
 }
 
 //  Turkify the captioning page.
-jQuery(document).ready(function () {
+$(document).ready(function () {
   // is assigntmentId is a URL parameter
   if((aid = gup("assignmentId"))!="" && $(form_selector).length>0) {
 
     // If the HIT hasn't been accepted yet, disabled the form fields.
     if(aid == "ASSIGNMENT_ID_NOT_AVAILABLE") {
-      $('input,textarea,select').attr("DISABLED", "disabled");
+	    $('input,textarea,select').attr("DISABLED", "disabled");
     }
 
     // Add a new hidden input element with name="assignmentId" that
