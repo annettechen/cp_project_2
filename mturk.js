@@ -24,7 +24,7 @@ function gup(name) {
 }
 
 //  Turkify the captioning page.
-$(document).ready(function () {
+$(document).ready(function() {
   // is assigntmentId is a URL parameter
   if((aid = gup("assignmentId"))!="" && $(form_selector).length>0) {
 
